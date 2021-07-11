@@ -1,0 +1,117 @@
+.register-logo {
+  color: $accent_color;
+}
+
+.register-body {
+  background-color: $body_background;
+  background-image: url("../images/nachos.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;  
+  form {
+    animation: translate_top 1.25s ease-in-out 1;
+    background-color: $highlight_background;
+    padding: 4rem 6rem;
+    width: 50%;
+    margin-bottom: 6rem;
+    position: relative;
+    left: 35%;    
+    @include flex(row, wrap, space-between, center);
+    @media screen and (max-width:767px) {
+      width: 90%;
+      margin: 3rem auto;
+      padding: 2rem;
+      left: 0;
+    }
+    @media screen and (min-width: 768px) and (max-width:1023px) {
+      width: 66%;
+      margin: 6rem auto;
+      left: 0;
+    }
+    h3 {
+      width: 100%;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      width: 100%;
+      margin-bottom: 2rem;
+      a {
+          color: $main_color;          
+          &:hover{
+              border-bottom: 1px solid $main_color;
+          }
+      }
+      &:last-of-type {
+        text-align: left;
+        margin-top: 1rem;
+        font-size: .75rem;
+        opacity: .75;
+        font-weight: 500;
+      }
+    }
+    .form-group {
+      width: 100%;
+      margin-top: 1rem;
+      &:nth-of-type(3){
+          width: 47%;
+      }
+      &:nth-of-type(4){
+          width: 47%;
+      }
+      label {
+        font-size: 0.75rem;
+        opacity: 0.5;
+        display: block;
+        font-weight: 500;
+        margin-bottom: .25rem;        
+      }
+      .checkbox-label{
+        display: inline;
+        vertical-align: super;
+        margin-left: .25rem;
+    }
+      input {
+        background-color: $accent_color;
+        border-style: none;
+        padding: 1rem;
+        color:$headings_color;
+        opacity: .6;
+        width: 100%;
+        border-bottom: 2px solid $highlight_background;
+        transition: all 0.25s ease;
+        outline: none;        
+        &:focus {
+          border-bottom: 2px solid $main_color;
+        }                
+      }
+      input[type=checkbox]{
+          @include square(1rem);          
+      }
+    }
+    button {
+        @include size(fit-content, auto);
+        margin: 0 auto;
+        border-style: none;
+        border: 2px solid $main_color;
+        color: $main_color;
+        background-color: transparent;
+        border-radius: 25px;
+        padding: 1rem 2rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        cursor: pointer;
+        transition: all .25s ease;
+        margin-top: 2rem;
+        &:hover {
+            background-color: $main_color;
+            color: $accent_color;
+        }                
+    }
+  }
+}
+.login-img {
+    background-image: url("../images/pizza-margarita.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    height: 100vh;
+}

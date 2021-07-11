@@ -1,0 +1,85 @@
+.booking {
+    background-color: $highlight_background;
+    background-image: url("../images/half-lettuce.png"), url("../images/half-spinach.png");
+    background-position: left top, right center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, 200px;
+    padding: 6rem 0;
+    form {
+        width: 66%;
+        margin: 0 auto;
+        padding: 4rem 0;
+        @include flex(column, wrap, center, center);
+        background-color: $accent_color;
+        @media screen and (max-width: 767px) {
+            width: 90%;            
+        }
+        @media screen and (min-width:768px) and (max-width: 1189px) {
+            width: 75%;        
+        }
+        .form-line {
+            @include size (20%, 1rem);
+            background-color: $main_color;
+            @media screen and (max-width:767px) {
+                width: 40%;                
+            }
+        }
+        h3 {
+            font-size: 1.75rem;
+            margin-top: .75rem;
+        }    
+    }
+    .form-search-resto {
+        @include size (45%, 3rem);
+        @include flex (row, nowrap, space-between, center);
+        background-color: $accent_color;        
+        padding: .35rem;
+        margin: 2rem 0;
+        box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.06);
+        @media screen and (max-width:553px){
+            width: 95%;
+        }
+        @media screen and (min-width:554px) and (max-width:1024px) {
+            width: 70%;        
+          }
+        input[type=text]{
+            border-style: none;
+            padding-left: 2rem;
+            width: 75%;
+            outline: none;
+            color: $headings_color;
+            opacity: .6;
+        }        
+        button {
+            @include size(25%, 100%);
+            cursor: pointer;
+            border-style: none;
+            background-color: $main_color;
+            color: $accent_color;
+            font-weight: 600;
+            font-size: 1.25rem;
+            text-transform: uppercase;
+        }        
+    }
+    .form-search-date {
+        @include flex (row, wrap, center, flex-start);
+        width: fit-content;
+        margin: 0 auto;        
+        div {
+            margin: 1rem;
+            color: $headings_color;
+            width: fit-content;
+            text-align: center;            
+            input {
+                display: block;
+                width: 100%;
+                border-style: none;
+                outline: none;
+                margin-top: .75rem;
+                color: $headings_color;
+                opacity: 60%;
+                text-align: center;                
+            }           
+        }
+    }
+}

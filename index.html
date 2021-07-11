@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">    
+    <link href="./assets/css/styles.css" rel="stylesheet">    
+    <title>Expice-Landing Page</title>
+</head>
+<body>
+    <a class="back-to-top" href="#siteHeader">
+        <i class="fas fa-angle-double-up"></i>
+    </a>
+    <main>
+        <header class="wrapper" id="siteHeader">
+            <div class="decorative-background"></div>
+            <nav>
+                <a href="#">expice</a>
+                <div id="menuToggle">
+                    <input name="toggle" type="checkbox">
+                    <label for="toggle">
+                    <!--
+                    divs to be styled as a hamburger button
+                    -->
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    </label>
+                    <ul>
+                        <li><a href="#search">Search</a></li>
+                        <li><a href="#advanceBooking">Book Now</a></li>
+                        <li><a href="#orderFood">Order</a></li>
+                        <li><a href="#subscription">Subscribe</a></li>
+                        <li class="hidden"><a class="access-link" href="./assets/html/sign-in.html">Sign in</a></li>
+                        <li class="hidden"><a class="access-link" href="./assets/html/register.html">Register</a></li>                        
+                    </ul>                    
+                </div>
+                <div>
+                    <a class="nav-button" href="./assets/html/sign-in.html">Sign in</a>
+                    <a class="nav-button" href="./assets/html/register.html">Register</a>
+                    <i class="fas fa-shopping-cart"></i>
+                </div>                
+            </nav>                               
+        </header>
+        <!--search section-->
+        <section class="wrapper search">
+            <div class="decorative-background">                
+            </div>
+            <div class="search-content" id="search">
+                <article>
+                    <h1>Food</h1>
+                    <h2>Discover Restaurant<br>& Delicious Food</h2>
+                    <form method="POST" action="https://www.example.com">
+                        <div>
+                            <input type="text" placeholder="Search restaurant or food">
+                            <button type="submit" disabled>Go</button>
+                        </div>                        
+                    </form>
+                    <div class="search-location">
+                        <div>
+                            <img src="./assets/images/location-icon.svg" alt="location icon">
+                        </div>
+                        <span>Chicago</span>
+                    </div>                    
+                </article>
+                <div class="search-img">
+                    <img src="./assets/images/main-dish-lettuce.png" alt="food dish">
+                </div>
+            </div>            
+        </section>        
+        <!--restaurants section-->
+        <section class="restaurants">            
+            <article class="wrapper article">
+                <h3>Some top restaurant for<br>dining in or take away!</h3>            
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing cursus auctor eget sed phasellus senectus. Ut tellus donec vestibulum tristique leo bibendum in a, tincidunt. Volutpat metus id amet, nam hac magna accumsan. Nascetur ac tortor purus ultrices morbi tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing cursus auctor eget sed.</p>
+            </article>
+            <ul>
+                <li>
+                    <div>
+                        <img src="./assets/images/pizza.png" alt="pizza">
+                    </div>
+                    <div class="restaurant-desc">
+                        <h4>Fire Water</h4>
+                        <p>We are all about we are all about to the fullest and all content dining out or in!dining out or in!</p>
+                        <img src="./assets/images/location-icon.svg" alt="location icon">
+                        <span>New Market</span>
+                        <button>Book Now</button>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="./assets/images/burger.png" alt="burger">
+                    </div>
+                    <div class="restaurant-desc">
+                        <h4>The Wonton</h4>
+                        <p>We are all about we are all about to the fullest and all content dining out or in!dining out or in!</p>
+                        <img src="./assets/images/location-icon.svg" alt="location icon">
+                        <span>Saheb Bazar</span>
+                        <button>Book Now</button>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="./assets/images/sushi.jpg" alt="sushi">
+                    </div>
+                    <div class="restaurant-desc">
+                        <h4>Japan Vibes</h4>
+                        <p>We are all about we are all about to the fullest and all content dining out or in!dining out or in!</p>
+                        <img src="./assets/images/location-icon.svg" alt="location icon">
+                        <span>South Bank</span>
+                        <button>Book Now</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <!--booking section-->
+        <section class="booking" id="advanceBooking">
+            <form method="POST" action="https://www.example.com">
+                <div class="form-line"></div>
+                <h3>advance booking</h3>
+                <div class="form-search-resto">
+                    <input type="text" placeholder="Search restaurant">
+                    <button type="submit">Go</button>
+                </div>
+                <div class="form-search-date">
+                    <div>
+                        <label for="date">Date</label>
+                        <img src="./assets/images/arrow-down.svg" alt="arrow icon">
+                        <input type="date" id="date">
+                    </div>
+                    <div>
+                        <label for="time">Hour</label>
+                        <img src="./assets/images/arrow-down.svg" alt="arrow icon">
+                        <input type="time" id="time">
+                    </div>
+                    <div>
+                        <label for="guests">Guests</label>
+                        <img src="./assets/images/arrow-down.svg" alt="arrow icon">
+                        <input type="number" id="guests" placeholder="3">
+                    </div>                                        
+                </div>
+            </form>
+        </section>
+        <!--services section-->
+        <section class="wrapper services">
+            <article class="article">
+                <h3>Our Services</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing cursus auctor eget sed phasellus senectus. Ut tellus donec vestibulum tristique leo bibendum in a, tincidunt. Volutpat metus id amet, nam hac magna accumsan. Nascetur ac tortor purus ultrices morbi tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing cursus auctor eget sed.</p>
+            </article>
+            <ul>
+                <li>
+                    <div>
+                        <img src="./assets/images/people-eating.png" alt="people eating icon">
+                    </div>
+                    <h4>Advanced Table Booking</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                </li>
+                <li>
+                    <div>
+                        <img src="./assets/images/dish icon.png" alt="dish icon">
+                    </div>
+                    <h4>Food For Free<br>24/7</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                </li>
+                <li>
+                    <div>
+                        <img src="./assets/images/motorbike.svg" alt="motorbike illustration">
+                    </div>
+                    <h4>Free Home Delivery At Your Door Steps</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>                    
+                </li>                
+            </ul>
+        </section>
+        <!--products section-->
+        <section class="wrapper products" id="orderFood">
+            <h3>Explore Our Foods</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing cursus auctor eget sed phasellus senectus. Ut tellus donec vestibulum tristique leo bibendum in a, tincidunt. Volutpat metus id amet.</p>
+            <ul class="products-ul">
+                <li>
+                    <div>
+                        <img src="./assets/images/sandwich.png" alt="jam sandwich">
+                    </div>
+                    <h4>Hand Sandwich</h4>
+                    <span>$10.25</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing.</p>
+                    <button>Order Now</button>
+                </li>
+                <li>
+                    <div>
+                        <img src="./assets/images/cheese-burger.png" alt="cheese-burger">
+                    </div>
+                    <h4>Hand Sandwich</h4>
+                    <span>$10.25</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing.</p>
+                    <button>Order Now</button>
+                </li>
+                <li>
+                    <div>
+                        <img src="./assets/images/fries.png" alt="fries">
+                    </div>
+                    <h4>Hand Sandwich</h4>
+                    <span>$10.25</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing.</p>
+                    <button>Order Now</button>
+                </li>
+                <li>
+                    <div>
+                        <img src="./assets/images/chicken-burger.png" alt="chicken burger">
+                    </div>
+                    <h4>Hand Sandwich</h4>
+                    <span>$10.25</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing.</p>
+                    <button>Order Now</button>
+                </li>
+                <li>
+                    <div>
+                        <img src="./assets/images/cake.png" alt="cake">
+                    </div>
+                    <h4>Hand Sandwich</h4>
+                    <span>$10.25</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing.</p>
+                    <button>Order Now</button>
+                </li>
+                <li>
+                    <div>
+                        <img src="./assets/images/cookies.png" alt="cookies">
+                    </div>
+                    <h4>Hand Sandwich</h4>
+                    <span>$10.25</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing.</p>
+                    <button>Order Now</button>
+                </li>                          
+            </ul>
+        </section>
+        <footer id="subscription">
+            <form method="POST" action="https://www.example.com">
+                <h3>Get Notified<br>About Amazing Products</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing cursus auctor eget sed phasellus senectus. </p>
+                <div>
+                    <input type="email" placeholder="E-mail">
+                    <button type="submit"><i class="fas fa-long-arrow-alt-right"></i></button>
+                </div>
+            </form>
+            <nav class="wrapper">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+                <span>© 2020 <a href="https://figmatemplate.com/restaurant-website-landing-page-figma-template/">Expice Studio</a> - Coded by M. Luz Sallietti</span>
+            </nav>            
+        </footer>         
+    </main>             
+</body>
+</html>

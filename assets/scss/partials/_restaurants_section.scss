@@ -1,0 +1,102 @@
+.restaurants {
+  padding-bottom: 6rem;
+  ul {
+    @include flex(row, wrap, space-between, center);    
+    li {
+      @include size(32%, auto);
+      position: relative;
+      margin-bottom: 1rem;
+      @media screen and (max-width: 767px){
+        width: 100%;
+      }
+      @media screen and (min-width:768px) and (max-width:1023px) {
+        width: 49%;        
+      }
+      div {
+        img {
+          @include size(100%, auto);
+          &:last-of-type {
+            border-radius: 5%;
+          }
+        }
+      }
+      .restaurant-desc {
+        @include size(100%, auto);
+        @include flex(row, wrap, space-between, center);
+        background-color: $main_color;
+        border-radius: 0 0 2rem 2rem;
+        opacity: 0.8;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: $accent_color;
+        padding: 1rem 0 4rem 1rem;
+        h4 {
+          font-size: 1.4rem;
+          font-weight: 600;
+        }
+        img {
+          @include size(3%, auto);
+        }
+        p {
+          padding: 0.75rem 3rem 0.75rem 0;
+        }
+        span {
+          width: 97%;
+          padding-left: 0.5rem;
+        }
+        button {
+          position: absolute;
+          right: 0;
+          bottom: 1rem;
+          border: none;
+          background-color: $accent_color;
+          color: $main_color;
+          padding: 1rem;
+          font-weight: 600;
+          border-radius: 25px 0 0 25px;
+          width: 40%;
+          cursor: pointer;
+          transition: all 0.2s ease;
+          &:hover {
+            transform: translateX(5%);           
+          }
+        }
+      }
+    }
+    @media screen and (min-width:768px) and (max-width:1023px) {
+      background-image: url("../images/dots.svg");
+      background-repeat: repeat;
+    }
+  }
+}
+.article {
+  @include flex(row, nowrap, flex-start, center);
+  border-left: 1.5rem solid $main_color;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;    
+  }
+  h3 {
+    @include size(50%, auto);
+    margin-left: 1.5rem;
+    @media screen and (max-width: 767px) {
+      @include size (100%, auto);    
+    }
+    @media screen and (min-width:768px) and (max-width:1023px) {
+      @include size (65%, auto)        
+    }
+  }
+  p {
+    @include size(40%, auto);
+    @media screen and (max-width: 767px) {
+      @include size (100%, auto);
+      margin-left: 1.5rem;
+      margin-top: .5rem;    
+    }
+    @media screen and (min-width:768px) and (max-width:1023px) {
+      @include size (35%, auto)        
+    }
+  }  
+}
