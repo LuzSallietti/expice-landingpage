@@ -49,6 +49,11 @@
             outline: none;
             color: $headings_color;
             opacity: .6;
+            &::placeholder{
+                color: $headings_color;
+                opacity: .6;
+                font-weight: 500;
+            }
         }        
         button {
             @include size(25%, 100%);
@@ -59,6 +64,10 @@
             font-weight: 600;
             font-size: 1.25rem;
             text-transform: uppercase;
+            transition: all linear 0.25s;
+            &:hover {
+                transform: scale(110%);
+            }
         }        
     }
     .form-search-date {

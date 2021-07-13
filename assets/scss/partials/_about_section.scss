@@ -45,7 +45,7 @@
     }
     form {
       @include size(80%, auto);
-      margin: 2rem 0 4rem 0;
+      margin: 2rem 0 4rem 0;       
       @media screen and (max-width:767px){
         width: 92%;        
       }
@@ -62,7 +62,15 @@
           text-align: center;
           width: 60%;
           font-size: 1.125rem;
-        }
+          &::placeholder{
+            color: $headings_color;
+            opacity: .6;
+            font-weight: 500;
+            @media screen and (max-width:360px) {
+              font-size: .88rem;              
+            }
+          }
+        }        
         button {
           background-color: $main-color;
           color: $accent_color;
@@ -72,10 +80,14 @@
           border-style: none;
           @include size(35%, 100%);
           border-radius: 4.2rem 0 0 0;
+          transition: width ease .5s;
+          &:hover {
+            width: 50%;
+          }
         }
         @media screen and (max-width:1023px){
           border: 4px solid $accent_color;
-        }
+        }        
       }
     }        
   }

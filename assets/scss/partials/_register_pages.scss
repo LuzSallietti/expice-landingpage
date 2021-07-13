@@ -1,12 +1,12 @@
 .register-logo {
   color: $accent_color;
 }
-
 .register-body {
   background-color: $body_background;
   background-image: url("../images/nachos.jpg");
   background-size: cover;
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
+  min-height: 100vh;  
   form {
     animation: translate_top 1.25s ease-in-out 1;
     background-color: $highlight_background;
@@ -60,10 +60,11 @@
       }
       label {
         font-size: 0.75rem;
-        opacity: 0.5;
+        opacity: .6;        
         display: block;
         font-weight: 500;
-        margin-bottom: .25rem;        
+        margin-bottom: .25rem;
+        color: $headings_color;        
       }
       .checkbox-label{
         display: inline;
@@ -112,6 +113,5 @@
 .login-img {
     background-image: url("../images/pizza-margarita.jpg");
     background-size: cover;
-    background-repeat: repeat;
-    height: 100vh;
+    background-repeat: repeat;    
 }
