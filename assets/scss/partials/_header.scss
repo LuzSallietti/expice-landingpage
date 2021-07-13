@@ -13,6 +13,12 @@ body {
     color: $headings_color;
     font-size: 2rem;
     font-weight: 500;
+    @media screen and (max-width:767px) {
+      font-size: 1.4rem;                      
+    }
+    @media screen and (min-width:768px) and (max-width:1439px){
+      font-size: 2.4rem;     
+    }
   }
   .back-to-top {
     @include circle(2.5rem);
@@ -109,7 +115,7 @@ header {
             transform: rotate(45deg);
           }
           &:nth-of-type(2){
-            transform: rotate(-45deg) translateX(6px) translateY(-6px);          
+            transform: rotate(-45deg) translateX(6px) translateY(-5px);          
           }
           &:nth-of-type(3){
             visibility: hidden;
