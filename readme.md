@@ -14,7 +14,7 @@ Trabajo práctico integrador correspondiente al 1º módulo del Bootcamp de Desa
 - Incluir un footer
 
 ## Link de acceso
-- Click aquí: [Expice Landing Page](https://luzsallietti.github.io/expice-landingpage/)
+- Click aquí: [Expice Landing Page](https://expice-landingpage.vercel.app/)
 
 ## Recursos utilizados
 
