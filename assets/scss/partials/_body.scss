@@ -1,0 +1,35 @@
+* {
+  @include resetStyle;
+}
+html {
+  scroll-behavior: smooth; 
+}
+body {
+  font-size: 14px;
+  font-family: $main_font;
+  background-color: $body_background; 
+  animation: appear 2s 1 ease;  
+  h3 {
+    color: $headings_color;
+    font-size: 2rem;
+    font-weight: 500;
+    @media screen and (min-width:768px) and (max-width:1439px){
+        font-size: 1.8rem;     
+      }
+    @media screen and (max-width:767px) {
+      font-size: 1.4rem;                      
+    }    
+  }
+  .back-to-top {
+    @include circle(2.5rem);
+    @include flex(row, nowrap, center, center);
+    background-color: $headings_color;
+    color: $accent_color;
+    font-size: 1.125rem;
+    padding: .25rem;
+    position: fixed;
+    right: 2%;
+    bottom: 5%;
+    z-index: 1000;
+  }    
+}

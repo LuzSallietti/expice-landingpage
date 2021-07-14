@@ -1,112 +1,109 @@
 footer {
-    .footer-img{        
-        position: absolute;
-        top:0;
-        left: 0;
-        height: 100%;
-        width: auto;
-        img {
-            height: 100%;
-            width: auto;
-        }
-        @media screen and (max-width:767px) {
-            display: none;           
-        }
-        @media screen and (min-width: 768px) and (max-width: 1023px) {
-            left: -20vw;            
-        }
+  position: relative;
+  background-color: $highlight_background;
+  padding-top: 6rem;
+  .footer-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: auto;
+    img {
+      height: 100%;
+      width: auto;
     }
-    position: relative;
-    background-color: $highlight_background;
-    padding-top: 6rem;    
-    form {
-        width: 50%;
-        margin: 0 auto;
-        text-align: center;
-        padding-bottom: 6rem;
-        @media screen and (max-width:553px) {
-            width: 95%;            
-        }
-        @media screen and (min-width:554px) and (max-width:1189px) {
-            width: 75%;            
-        }        
-        p {
-            width: 75%;
-            margin: 1rem auto 2.5rem auto;
-            @media screen and (max-width: 767px){
-                width: 95%;
-            }
-        }
-        div {
-            @include size(70%, auto);
-            @include flex (row, nowrap, space-between, center);
-            padding: 1rem;
-            background-color: $accent_color;
-            border-radius: 25px;
-            margin: 0 auto;
-            @media screen and (max-width: 767px){
-                width: 95%;
-            }
-            input {
-                color: $headings_color;
-                opacity: .6;
-                border-style: none;
-                outline: none;
-                padding-left: 2rem;
-                width: 75%;
-                &::placeholder{
-                    color: $headings_color;
-                    opacity: .6;
-                    font-weight: 500;
-                }
-            }
-            button {
-                @include circle(2.5rem);
-                background-color: $main_color;
-                border-style: none;
-                cursor: pointer;
-                color: $accent_color;
-                font-size: 1.25rem;
-                transition: all .25s ease;
-                &:hover{
-                    transform: translateX(20%);
-                }                
-            }
-        }        
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      left: -20vw;
     }
-    nav {
-        @include flex(row, wrap, flex-end, flex-end);
-        padding: 2rem 0;
-        @media screen and (max-width:1023px) {
-            justify-content: center;            
-        }
-        ul {
-            @include flex (row, nowrap, space-between, center);
-            width: auto;
-            li {
-                margin-right: 1.25rem;
-                a {
-                    color: $texts_color;
-                    font-size: 1.25rem;
-                    &:hover{
-                        opacity: .75;
-                    }
-                }
-            }
-        }
-        span {
-            margin-left: 2rem;
-            text-align: center;
-            @media screen and (max-width: 487px) {
-                margin-left: 0;
-                padding-top: 1rem;                
-            }
-            a {
-                color: $texts_color;
-                font-weight: 600;
-            }            
-        }
-
+    @media screen and (max-width: 767px) {
+      display: none;
     }
-    
+  }
+  form {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 6rem;
+    @media screen and (min-width: 554px) and (max-width: 1189px) {
+      width: 75%;
+    }
+    @media screen and (max-width: 553px) {
+      width: 95%;
+    }
+    p {
+      width: 75%;
+      margin: 1rem auto 2.5rem auto;
+      @media screen and (max-width: 767px) {
+        width: 95%;
+      }
+    }
+    div {
+      @include size(70%, auto);
+      @include flex(row, nowrap, space-between, center);
+      padding: 1rem;
+      background-color: $accent_color;
+      border-radius: 25px;
+      margin: 0 auto;
+      @media screen and (max-width: 767px) {
+        width: 95%;
+      }
+      input {
+        color: $headings_color;
+        opacity: 0.6;
+        border-style: none;
+        outline: none;
+        padding-left: 2rem;
+        width: 75%;
+        &::placeholder {
+          color: $headings_color;
+          opacity: 0.6;
+          font-weight: 500;
+        }
+      }
+      button {
+        @include circle(2.5rem);
+        background-color: $main_color;
+        border-style: none;
+        cursor: pointer;
+        color: $accent_color;
+        font-size: 1.25rem;
+        transition: all 0.25s ease;
+        &:hover {
+          transform: translateX(20%);
+        }
+      }
+    }
+  }
+  nav {
+    @include flex(row, wrap, flex-end, flex-end);
+    padding: 2rem 0;
+    @media screen and (max-width: 1023px) {
+      justify-content: center;
+    }
+    ul {
+      @include flex(row, nowrap, space-between, center);
+      li {
+        margin-right: 1.25rem;
+        a {
+          color: $texts_color;
+          font-size: 1.25rem;
+          &:hover {
+            opacity: 0.75;
+          }
+        }
+      }
+    }
+    span {
+      margin-left: 2rem;
+      text-align: center;
+      @media screen and (max-width: 487px) {
+        margin-left: 0;
+        padding-top: 1rem;
+      }
+      a {
+        color: $texts_color;
+        font-weight: 600;
+      }
+    }
+  }
 }

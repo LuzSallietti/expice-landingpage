@@ -1,0 +1,42 @@
+main {
+  @media screen and (min-width: 1600px) {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  .wrapper {
+    margin-left: 7.75rem;
+    margin-right: 7.75rem;
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      margin-left: 2.2rem;
+      margin-right: 2.2rem;
+    }
+    @media screen and (min-width: 554px) and (max-width: 767px) {
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+    }
+    @media screen and (max-width: 553px) {
+      margin-left: 0.75rem;
+      margin-right: 0.75rem;
+    }
+  }
+  .decorative-background {
+    position: absolute;
+    top: 0;
+    right: -7.75rem;
+    @include size(35%, 100%);
+    background-color: $main-color;
+    z-index: -1;
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      right: -2.2rem;
+      width: 30%;
+    }
+    @media screen and (min-width: 554px) and (max-width: 767px) {
+      right: -1.5rem;
+      width: 20%;
+    }
+    @media screen and (max-width: 553px) {
+      right: -0.75rem;
+      width: 20%;
+    }
+  }
+}

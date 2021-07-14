@@ -1,16 +1,50 @@
+.article {
+  @include flex(row, nowrap, flex-start, center);
+  border-left: 1rem solid $main_color;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+  h3 {
+    @include size(50%, auto);
+    margin-left: 1.5rem;
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      @include size(65%, auto);
+    }
+    @media screen and (max-width: 767px) {
+      @include size(100%, auto);
+    }
+  }
+  p {
+    @include size(40%, auto);
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      @include size(35%, auto);
+    }
+    @media screen and (max-width: 767px) {
+      @include size(100%, auto);
+      margin-left: 1.5rem;
+      margin-top: 0.5rem;
+    }
+  }
+}
 .restaurants {
   padding-bottom: 6rem;
   ul {
-    @include flex(row, wrap, space-between, center);    
+    @include flex(row, wrap, space-between, center);
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      background-image: url("../images/dots.svg");
+      background-repeat: repeat;
+    }
     li {
       @include size(32%, auto);
       position: relative;
       margin-bottom: 1rem;
-      @media screen and (max-width: 767px){
-        width: 100%;
+      @media screen and (min-width: 768px) and (max-width: 1023px) {
+        width: 49%;
       }
-      @media screen and (min-width:768px) and (max-width:1023px) {
-        width: 49%;        
+      @media screen and (max-width: 767px) {
+        width: 100%;
       }
       div {
         img {
@@ -59,44 +93,10 @@
           cursor: pointer;
           transition: width 0.25s ease;
           &:hover {
-            width: 50%;           
+            width: 50%;
           }
         }
       }
     }
-    @media screen and (min-width:768px) and (max-width:1023px) {
-      background-image: url("../images/dots.svg");
-      background-repeat: repeat;
-    }
   }
-}
-.article {
-  @include flex(row, nowrap, flex-start, center);
-  border-left: 1rem solid $main_color;
-  margin-top: 4rem;
-  margin-bottom: 6rem;
-  @media screen and (max-width: 767px) {
-    flex-wrap: wrap;    
-  }
-  h3 {
-    @include size(50%, auto);
-    margin-left: 1.5rem;
-    @media screen and (max-width: 767px) {
-      @include size (100%, auto);    
-    }
-    @media screen and (min-width:768px) and (max-width:1023px) {
-      @include size (65%, auto)        
-    }
-  }
-  p {
-    @include size(40%, auto);
-    @media screen and (max-width: 767px) {
-      @include size (100%, auto);
-      margin-left: 1.5rem;
-      margin-top: .5rem;    
-    }
-    @media screen and (min-width:768px) and (max-width:1023px) {
-      @include size (35%, auto)        
-    }
-  }  
 }

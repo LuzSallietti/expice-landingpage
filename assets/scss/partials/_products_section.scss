@@ -1,6 +1,6 @@
 .products {
     text-align: center;
-    padding: 6rem 0; /*check space between sections */
+    padding: 6rem 0;
     p {
         width: 50%;
         margin: 1rem auto 3rem auto;
@@ -19,12 +19,12 @@
             border-radius: 5%;
             position: relative;
             @include flex(row, wrap, space-between, center);
-            @media screen and (max-width: 767px) {
-                width: 100%;                
-            }
             @media screen and (min-width:768px) and (max-width:1439px) {
                 width: 48%;                                
-            }                        
+            } 
+            @media screen and (max-width: 767px) {
+                width: 100%;                
+            }                                   
             div {
                 @include size(100%, auto);                
                 img {
@@ -38,8 +38,7 @@
                 font-size: 1.125rem;
                 width: 75%;
                 margin: .75rem auto;
-                padding-left: 1rem;
-                
+                padding-left: 1rem;                
             }
             span {
                 color: $main_color;
