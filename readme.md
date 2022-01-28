@@ -1,4 +1,4 @@
-# Expice - Food guide and online ordering landing page
+# Expice - Food guide (Trabajo práctico HTML y CSS)
 
 El desarrollo de esta landing page estatática se basa en el diseño UX/UI de [Expice](https://figmatemplate.com/restaurant-website-landing-page-figma-template/), disponible para usuarios de la comunidad Figma.
 Trabajo práctico integrador correspondiente al 1º módulo del Bootcamp de Desarrollo Front end de [NUCBA](https://nucba.com.ar/)
@@ -24,7 +24,7 @@ Trabajo práctico integrador correspondiente al 1º módulo del Bootcamp de Desa
 - Diseño responsivo
 - Compilado con Sass
 
-### Useful resources
+### Recursos útiles
 
 - [Expice Free UI Kit](https://figmatemplate.com/restaurant-website-landing-page-figma-template/)
 - [Google Fonts](https://fonts.google.com/) 
